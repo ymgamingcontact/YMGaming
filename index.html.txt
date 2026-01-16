@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YM Casino-Gaming Program | Live Casino Education</title>
+  <meta name="description" content="Educational live casino platform explaining Evolution-powered games such as Crazy Time and Lightning Roulette. 18+ only.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+    header p {
+      margin: 10px 0 0;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 960px;
+      margin: 25px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #222;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      color: #666;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 6px 14px;
+      background: #eee;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>YM Casino-Gaming Program</h1>
+  <p>Live Casino Game Education & Reviews</p>
+  <div class="badge">18+ • Gamble Responsibly • Educational Content Only</div>
+</header>
+
+<section>
+  <h2>About This Platform</h2>
+  <p>
+    This website provides educational content focused on explaining live casino games clearly,
+    responsibly, and transparently. It is designed to help users understand how live casino games
+    work, including gameplay mechanics, bonus features, volatility, and risk.
+  </p>
+  <p>
+    This platform does <strong>not</strong> promote guaranteed wins, betting systems, or predictions.
+    All games discussed are chance-based and intended strictly for entertainment.
+  </p>
+</section>
+
+<section>
+  <h2>Games Covered</h2>
+
+  <h3>Crazy Time</h3>
+  <p>
+    Crazy Time is a live casino game show developed by Evolution. It features a large spinning wheel
+    with numbered segments and four bonus games. Bonus rounds are rare and outcomes are random.
+  </p>
+
+  <h3>Monopoly Big Baller</h3>
+  <p>
+    Monopoly Big Baller is a live number-draw game based on the Monopoly brand. Players bet on numbers
+    drawn live, with occasional access to Monopoly-themed bonus rounds.
+  </p>
+
+  <h3>Lightning Roulette</h3>
+  <p>
+    Lightning Roulette is a live roulette variant by Evolution that includes randomly generated
+    lightning numbers with multipliers. The game has higher volatility than standard roulette.
+  </p>
+
+  <h3>Dream Catcher</h3>
+  <p>
+    Dream Catcher is a live wheel game featuring simple gameplay and lower volatility compared to
+    other live game shows. Multipliers may appear on selected numbers.
+  </p>
+</section>
+
+<section>
+  <h2>Responsible Gambling</h2>
+  <ul>
+    <li>18+ only</li>
+    <li>Never gamble money you cannot afford to lose</li>
+    <li>Gambling should be treated as entertainment, not income</li>
+  </ul>
+  <p class="small">
+    UK players can find support via BeGambleAware or GamCare.
+  </p>
+</section>
+
+<section>
+  <h2>Affiliate Disclosure</h2>
+  <p>
+    This website may contain affiliate links to licensed online casinos.
+    If users sign up through these links, this platform may earn a commission
+    at no additional cost to the user. Partnerships do not influence content accuracy.
+  </p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>
+    For partnership, affiliate, or media enquiries:
+  </p>
+  <p>
+    <strong>Email:</strong> contact@ymgaming.co.uk
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 YM Casino-Gaming Program | livecasino.ymgaming.co.uk | 18+ Gamble Responsibly</p>
+</footer>
+
+</body>
+</html>

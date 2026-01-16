@@ -107,10 +107,112 @@ footer {
   font-size: 14px;
   color: #666;
 }
+/* --- Pro polish upgrades --- */
+html { scroll-behavior: smooth; }
+
+header {
+  position: relative;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 12px 12px;
+  background: rgba(17,17,17,0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+nav a {
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.10);
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+
+nav a:active {
+  transform: scale(0.98);
+}
+
+section {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.game {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 18px 16px 18px;
+  margin-top: 18px;
+}
+
+.game h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.pro-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.pro-box {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px 12px;
+}
+
+.pro-box strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.backtotop {
+  position: fixed;
+  right: 14px;
+  bottom: 16px;
+  z-index: 999;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  opacity: 0.92;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.backtotop:active { transform: scale(0.98); }
+
+@media (min-width: 760px) {
+  .pro-grid { grid-template-columns: 1fr 1fr; }
+}
+  .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.85;
+  z-index: 999;
+  }
+
+.back-to-top:active { 
+  transform: scale(0.98); 
+  opacity: 1;
+}
 </style>
 </head>
 
-<body>
+<body id="top">
 
 <header>
 <h1>YM Casino-Gaming Program</h1>
@@ -138,61 +240,165 @@ or predictions.
 <section id="games">
 <h2>Games Covered</h2>
 
-<div class="game crazy">
-<h3>Crazy Time</h3>
-<span class="pill">Game Show</span>
-<span class="pill">High Volatility</span>
-<p>
+<div class="game crazy" id="crazy-time">
+  <h3>Crazy Time</h3>
+  <span class="pill">Game Show</span>
+  <span class="pill">High Volatility</span>
+
+  <p>
+    Crazy Time is a live game show built around a large wheel plus four bonus rounds.
+    Outcomes are random and bonus rounds are uncommon.
+  </p>
+
+  <div class="pro-grid">
+    <div class="pro-box">
+      <strong>How it works</strong>
+      Wheel spin determines a number payout or a bonus round.
+    </div>
+    <div class="pro-box">
+      <strong>Volatility & risk</strong>
+      High variance: long stretches of small results with occasional large multipliers.
+    </div>
+    <div class="pro-box">
+      <strong>Key mechanics</strong>
+      Bonus games + multipliers add variance; there is no predictable pattern.
+    </div>
+    <div class="pro-box">
+      <strong>Who it suits</strong>
+      Entertainment-focused players who accept high swings and randomness.
+    </div>
+  </div>
+</div>
 Crazy Time is a live casino game show featuring a large wheel and four bonus games.
 Bonus rounds are rare and outcomes are random.
 </p>
 </div>
 
-<div class="game monopoly">
-<h3>Monopoly Big Baller</h3>
-<span class="pill">Number Draw</span>
-<span class="pill">Medium–High Volatility</span>
-<p>
+<div class="game monopoly" id="monopoly-big-baller">
+  <h3>Monopoly Big Baller</h3>
+  <span class="pill">Number Draw</span>
+  <span class="pill">Medium–High Volatility</span>
+
+  <p>
+    Monopoly Big Baller is a live number-draw format with multipliers and occasional
+    bonus features. Results are determined live and are chance-based.
+  </p>
+
+  <div class="pro-grid">
+    <div class="pro-box">
+      <strong>How it works</strong>
+      Numbers are drawn live; payouts depend on the drawn number and multiplier events.
+    </div>
+    <div class="pro-box">
+      <strong>Volatility & risk</strong>
+      Medium–high variance depending on stake distribution and multiplier frequency.
+    </div>
+    <div class="pro-box">
+      <strong>Key mechanics</strong>
+      Multipliers increase variance; bonus features are not guaranteed.
+    </div>
+    <div class="pro-box">
+      <strong>Who it suits</strong>
+      Players who want a game show feel with clearer “number” structure than a wheel.
+    </div>
+  </div>
+</div>
 Monopoly Big Baller is a live number-draw game based on the Monopoly brand,
 featuring bonus rounds and multipliers.
 </p>
 </div>
 
-<div class="game lightning">
-<h3>Lightning Roulette</h3>
-<span class="pill">Roulette</span>
-<span class="pill">High Volatility</span>
-<p>
-Lightning Roulette adds random lightning numbers with large multipliers to
-standard European roulette mechanics.
-</p>
+<div class="game lightning" id="lightning-roulette">
+  <h3>Lightning Roulette</h3>
+  <span class="pill">Roulette</span>
+  <span class="pill">High Volatility</span>
+
+  <p>
+    Lightning Roulette is based on European roulette, with randomly selected “lightning”
+    numbers receiving multipliers. This increases volatility.
+  </p>
+
+  <div class="pro-grid">
+    <div class="pro-box">
+      <strong>How it works</strong>
+      Standard roulette spin + random lightning numbers with multipliers.
+    </div>
+    <div class="pro-box">
+      <strong>Volatility & risk</strong>
+      Higher variance than standard roulette because payouts are concentrated on lightning hits.
+    </div>
+    <div class="pro-box">
+      <strong>Key mechanics</strong>
+      Lightning selection is random; multipliers do not create a predictable edge.
+    </div>
+    <div class="pro-box">
+      <strong>Who it suits</strong>
+      Players who enjoy roulette but prefer higher-risk, higher-variance entertainment.
+    </div>
+  </div>
 </div>
 
-<div class="game dream">
-<h3>Dream Catcher</h3>
-<span class="pill">Game Show</span>
-<span class="pill">Low–Medium Volatility</span>
-<p>
-Dream Catcher is a wheel-based live casino game with frequent low payouts
-and occasional higher multipliers.
-</p>
+<div class="game dream" id="dream-catcher">
+  <h3>Dream Catcher</h3>
+  <span class="pill">Game Show</span>
+  <span class="pill">Low–Medium Volatility</span>
+
+  <p>
+    Dream Catcher is a live wheel game with frequent lower payouts and occasional
+    higher multipliers. It is typically lower variance than bonus-heavy game shows.
+  </p>
+
+  <div class="pro-grid">
+    <div class="pro-box">
+      <strong>How it works</strong>
+      A wheel is spun each round; the result determines the payout multiplier.
+    </div>
+    <div class="pro-box">
+      <strong>Volatility & risk</strong>
+      Low–medium variance: more frequent results, fewer extreme swings.
+    </div>
+    <div class="pro-box">
+      <strong>Key mechanics</strong>
+      Multipliers vary by segment; outcomes remain random.
+    </div>
+    <div class="pro-box">
+      <strong>Who it suits</strong>
+      Casual viewers who want a slower pace and fewer high-variance features.
+    </div>
+  </div>
 </div>
-</section>
 
 <section id="lightning-blackjack">
-<h2>Lightning Blackjack</h2>
-<div class="game blackjack">
-<span class="pill">Blackjack</span>
-<span class="pill">High Variance</span>
-<p>
-Lightning Blackjack is a live blackjack variant that randomly applies multipliers
-to specific cards. These multipliers significantly increase volatility and risk.
-</p>
-<p>
-This game does not change core blackjack rules but introduces additional variance
-through randomly selected lightning cards.
-</p>
-</div>
+  <h2>Lightning Blackjack</h2>
+
+  <div class="game blackjack">
+    <span class="pill">Blackjack</span>
+    <span class="pill">High Variance</span>
+
+    <p>
+      Lightning Blackjack is a live blackjack variant that randomly applies multipliers
+      to specific cards. This increases volatility and risk compared to standard live blackjack.
+    </p>
+
+    <div class="pro-grid">
+      <div class="pro-box">
+        <strong>How it works</strong>
+        Standard blackjack rules with random “lightning” cards that can multiply certain outcomes.
+      </div>
+      <div class="pro-box">
+        <strong>Volatility & risk</strong>
+        High variance: larger swings because a portion of value is tied to multiplier events.
+      </div>
+      <div class="pro-box">
+        <strong>Key mechanics</strong>
+        Multipliers are random and do not provide a guaranteed advantage or predictable timing.
+      </div>
+      <div class="pro-box">
+        <strong>Who it suits</strong>
+        Players who understand blackjack basics and want a higher-variance entertainment format.
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="responsible">
@@ -258,6 +464,7 @@ For professional or affiliate-related enquiries:
 <footer>
 © YM Casino-Gaming Program • Educational Use Only
 </footer>
-
+<!-- Back to Top Button -->
+<a href="#top" class="back-to-top">↑ Top</a>
 </body>
 </html>

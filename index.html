@@ -1,152 +1,218 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>YM Casino-Gaming Program | Live Casino Education</title>
-  <meta name="description" content="Educational live casino platform explaining Evolution-powered games such as Crazy Time and Lightning Roulette. 18+ only.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>YM Casino-Gaming Program | Live Casino Education</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Educational live casino platform explaining Evolution-powered games including Crazy Time, Lightning Roulette and Lightning Blackjack. 18+ only.">
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 34px;
-    }
-    header p {
-      margin: 10px 0 0;
-      opacity: 0.9;
-    }
-    section {
-      max-width: 960px;
-      margin: 25px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-    }
-    h2 {
-      margin-top: 0;
-      color: #222;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 14px;
-      color: #666;
-    }
-    .badge {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 6px 14px;
-      background: #eee;
-      border-radius: 999px;
-      font-size: 13px;
-    }
-    .small {
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.badge {
+  margin-top: 14px;
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  font-size: 13px;
+}
+
+nav {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+}
+
+section {
+  max-width: 960px;
+  margin: 18px auto;
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.game {
+  border-left: 6px solid;
+  padding-left: 18px;
+  margin-top: 30px;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin: 6px 6px 0 0;
+  color: #fff;
+}
+
+/* Game colours */
+.crazy { border-color: #7b3fe4; }
+.crazy .pill { background: #7b3fe4; }
+
+.monopoly { border-color: #2e8b57; }
+.monopoly .pill { background: #2e8b57; }
+
+.lightning { border-color: #1e90ff; }
+.lightning .pill { background: #1e90ff; }
+
+.dream { border-color: #ff9800; }
+.dream .pill { background: #ff9800; }
+
+.blackjack { border-color: #c62828; }
+.blackjack .pill { background: #c62828; }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  color: #666;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>YM Casino-Gaming Program</h1>
-  <p>Live Casino Game Education & Reviews</p>
-  <div class="badge">18+ • Gamble Responsibly • Educational Content Only</div>
+<h1>YM Casino-Gaming Program</h1>
+<p>Live Casino Game Education & Reviews</p>
+<div class="badge">18+ • Educational Content • Gamble Responsibly</div>
+
+<nav>
+<a href="#games">Games</a>
+<a href="#how">How Live Casino Works</a>
+<a href="#responsible">Responsible Gambling</a>
+<a href="#lightning-blackjack">Lightning Blackjack</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section>
-  <h2>About This Platform</h2>
-  <p>
-    This website provides educational content focused on explaining live casino games clearly,
-    responsibly, and transparently. It is designed to help users understand how live casino games
-    work, including gameplay mechanics, bonus features, volatility, and risk.
-  </p>
-  <p>
-    This platform does <strong>not</strong> promote guaranteed wins, betting systems, or predictions.
-    All games discussed are chance-based and intended strictly for entertainment.
-  </p>
+<h2>About This Platform</h2>
+<p>
+This website provides educational content focused on explaining live casino games clearly,
+responsibly, and transparently. It does not promote guaranteed wins, betting systems,
+or predictions.
+</p>
 </section>
 
-<section>
-  <h2>Games Covered</h2>
+<section id="games">
+<h2>Games Covered</h2>
 
-  <h3>Crazy Time</h3>
-  <p>
-    Crazy Time is a live casino game show developed by Evolution. It features a large spinning wheel
-    with numbered segments and four bonus games. Bonus rounds are rare and outcomes are random.
-  </p>
+<div class="game crazy">
+<h3>Crazy Time</h3>
+<span class="pill">Game Show</span>
+<span class="pill">High Volatility</span>
+<p>
+Crazy Time is a live casino game show featuring a large wheel and four bonus games.
+Bonus rounds are rare and outcomes are random.
+</p>
+</div>
 
-  <h3>Monopoly Big Baller</h3>
-  <p>
-    Monopoly Big Baller is a live number-draw game based on the Monopoly brand. Players bet on numbers
-    drawn live, with occasional access to Monopoly-themed bonus rounds.
-  </p>
+<div class="game monopoly">
+<h3>Monopoly Big Baller</h3>
+<span class="pill">Number Draw</span>
+<span class="pill">Medium–High Volatility</span>
+<p>
+Monopoly Big Baller is a live number-draw game based on the Monopoly brand,
+featuring bonus rounds and multipliers.
+</p>
+</div>
 
-  <h3>Lightning Roulette</h3>
-  <p>
-    Lightning Roulette is a live roulette variant by Evolution that includes randomly generated
-    lightning numbers with multipliers. The game has higher volatility than standard roulette.
-  </p>
+<div class="game lightning">
+<h3>Lightning Roulette</h3>
+<span class="pill">Roulette</span>
+<span class="pill">High Volatility</span>
+<p>
+Lightning Roulette adds random lightning numbers with large multipliers to
+standard European roulette mechanics.
+</p>
+</div>
 
-  <h3>Dream Catcher</h3>
-  <p>
-    Dream Catcher is a live wheel game featuring simple gameplay and lower volatility compared to
-    other live game shows. Multipliers may appear on selected numbers.
-  </p>
+<div class="game dream">
+<h3>Dream Catcher</h3>
+<span class="pill">Game Show</span>
+<span class="pill">Low–Medium Volatility</span>
+<p>
+Dream Catcher is a wheel-based live casino game with frequent low payouts
+and occasional higher multipliers.
+</p>
+</div>
 </section>
 
-<section>
-  <h2>Responsible Gambling</h2>
-  <ul>
-    <li>18+ only</li>
-    <li>Never gamble money you cannot afford to lose</li>
-    <li>Gambling should be treated as entertainment, not income</li>
-  </ul>
-  <p class="small">
-    UK players can find support via BeGambleAware or GamCare.
-  </p>
+<section id="lightning-blackjack">
+<h2>Lightning Blackjack</h2>
+<div class="game blackjack">
+<span class="pill">Blackjack</span>
+<span class="pill">High Variance</span>
+<p>
+Lightning Blackjack is a live blackjack variant that randomly applies multipliers
+to specific cards. These multipliers significantly increase volatility and risk.
+</p>
+<p>
+This game does not change core blackjack rules but introduces additional variance
+through randomly selected lightning cards.
+</p>
+</div>
 </section>
 
-<section>
-  <h2>Affiliate Disclosure</h2>
-  <p>
-    This website may contain affiliate links to licensed online casinos.
-    If users sign up through these links, this platform may earn a commission
-    at no additional cost to the user. Partnerships do not influence content accuracy.
-  </p>
+<section id="responsible">
+<h2>Responsible Gambling</h2>
+<p>
+All games discussed are chance-based. This platform is strictly educational and
+does not encourage excessive or harmful gambling behaviour.
+</p>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>
-    For partnership, affiliate, or media enquiries:
-  </p>
-  <p>
-    <strong>Email:</strong> contact@ymgaming.co.uk
-  </p>
+<section id="contact">
+<h2>Contact</h2>
+<p>
+For professional or affiliate-related enquiries:
+<br><strong>Email:</strong> ymgaming.contact@gmail.com
+</p>
 </section>
 
 <footer>
-  <p>© 2026 YM Casino-Gaming Program | livecasino.ymgaming.co.uk | 18+ Gamble Responsibly</p>
+© YM Casino-Gaming Program • Educational Use Only
 </footer>
 
 </body>
